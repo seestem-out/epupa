@@ -1,0 +1,206 @@
+<!DOCTYPE html><head lang="en"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet" href="css/vendor/spectre.min.css"><link rel="stylesheet" href="css/vendor/spectre-exp.min.css"><link rel="stylesheet" href="css/vendor/spectre-icons.min.css"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link><title>Epupa Films</title><style>
+@font-face {
+  font-family: 'Univers-Regular';
+  src: URL('fonts/UniversRegular.ttf') format('truetype');
+}
+body{
+  padding: 1em 8em
+}
+@media only screen and (max-width: 900px){
+  body{
+    padding: 1em
+  }
+}
+</style><style>
+nav {
+  background-color: rgb(255,255,255);
+  border: thin solid rgba(0,0,0,0.05);
+}
+
+#LOGO{
+  width: 120px;
+}
+
+.navlink{
+  color: rgb(0,191,149) !important;
+  font-family: "Univers-Regular";
+}
+
+.active_nav {
+  color: rgb(148,149,153) !important;
+}
+
+#MOBILE_NAVIGATION, #MOBILE_LOGO{
+  display: none;
+}
+
+#MOBILE_NAVIGATION .btn.btn-link{
+  color: rgb(0,191,149) !important;
+}
+
+@media only screen and (max-width: 663px){
+  #NAVIGATION_BAR{
+    display: none
+  }
+
+  #MOBILE_LOGO{
+    width: 80px;
+    margin: 0 auto;
+  }
+
+  #MOBILE_NAVIGATION,#MOBILE_LOGO{
+    display: block;    
+  }
+
+}
+
+#HERO {
+  background-image: url("./cover.jpg");
+  height: 45vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 4em;
+}
+
+#HEROHEADING {
+  color: rgb(255,255,255) !important;
+  font-family: "Univers-Regular";
+}
+
+#HEROSUBHEADING{
+  color: rgb(217,217,217) !important;
+  font-family: "Univers-Regular";
+  text-shadow: 1px 1px 1px #000;
+}
+
+#HERO #HEROBTN{
+ border-color: rgb(0,191,149) !important;
+ background-color: rgb(0,191,149) !important;
+ font-family: "Univers-Regular";
+ border-radius: 0;
+}
+
+#HERO #HEROBTN a{
+ color: rgb(255,255,255) !important;
+}
+
+@media only screen and (max-width: 1183px){
+  #HERO {
+    height: 30vh; 
+  }
+
+  #HEROHEADING {
+    font-size: 1.1em;
+  }
+
+  #HERO {
+    padding: 2em;
+  }
+}
+
+@media only screen and (max-width: 397px){
+  #HERO {
+    height: 25vh;
+  }
+
+ #HEROBTN {
+    display: none;
+  }
+
+  #HEROSUBHEADING{
+    font-size: .8em;
+  }
+}
+
+@media only screen and (max-width: 335px){
+  #HERO {
+    height: 20vh;
+  }
+}
+
+@media only screen and (max-width: 274px){
+  #HERO {
+    height: 15vh;
+  }
+
+  #HEROSUBHEADING{
+    display: none
+  }
+}
+
+.basic-conent-section{
+  padding: 4em;
+  background-color: rgb(246,246,246);
+  font-family: "Univers-Regular";
+}
+
+.basic-conent-section #CONTENTHEADING {
+  color: rgb(0,191,149) !important;
+}
+
+.basic-conent-section img{
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: thick solid rgb(0,191,149);
+}
+
+@media only screen and (max-width: 434px){
+  .basic-conent-section{
+    padding: 1em;
+  }
+  
+}
+
+#ServicesContentWidget{
+  padding: 4em;
+  background-color: rgb(0,191,149);
+  font-family: "Univers-Regular";
+}
+
+#ServicesContentWidget h5{
+  color: rgb(255,255,255) !important;
+}
+
+#ServicesContentWidget .card{
+  background-color: rgb(0,191,149);
+  padding: .3em;
+  border: none;
+  text-align: center;
+}
+
+#ServicesContentWidget .card img{
+  width: 64px;
+  margin: 0 auto;
+}
+
+#ServicesContentWidget .card .card-title{
+  color: rgb(255,255,255);
+}
+
+@media only screen and (max-width: 434px){
+  #ServicesContentWidget .card img{
+    width: 34px;
+  }
+
+  #ServicesContentWidget{
+    padding: 1em;
+  }
+
+  .card-title{
+    font-size: .8em;
+  }
+}
+
+#ContactWidget {
+  padding: 4em;
+  background-color: rgb(38,38,38);
+  font-family: "Univers-Regular";
+  color: rgb(0,191,149)
+}
+
+.contact-containers{
+  text-align: center;
+}
+</style><body><nav class="navbar" id="NAVIGATION_BAR"><section class="navbar-section"><a class="btn btn-link navlink active_nav" href="./index.html">Home</a><a class="btn btn-link navlink" href="">About</a><a class="btn btn-link navlink" href="">Contact</a></section><section class="navbar-center"><img id="LOGO" src="./logo.png"></img></section><section class="navbar-section"><a class="btn btn-link navlink" href="">Filmography</a><a class="btn btn-link navlink" href="">Trailors</a><a class="btn btn-link navlink" href="">Gallery</a></section></nav><div class="text-center"><img id="MOBILE_LOGO" src="./logo.png"></img></div><div class="dropdown" id="MOBILE_NAVIGATION"><a class="btn btn-link dropdown-toggle" href="#"><i class="icon icon-menu"></i></a><ul class="menu"><li class="menu-item"><a class="btn btn-link navlink active_nav" href="./index.html">Home</a></li><li class="menu-item"><a class="btn btn-link navlink" href="">About</a></li><li class="menu-item"><a class="btn btn-link navlink" href="">Contact</a></li><li class="menu-item"><a class="btn btn-link navlink" href="">Filmography</a></li><li class="menu-item"><a class="btn btn-link navlink" href="">Trailors</a></li><li class="menu-item"><a class="btn btn-link navlink" href="">Gallery</a></li></ul></div><section id="HERO"><h3 id="HEROHEADING">Epupa Films</h3><p class="col-8 col-lg-4 col-md-8" id="HEROSUBHEADING">Reality, Passion, Drama... Art</p><button class="btn" id="HEROBTN"><a href="./explore.html">Filmography</a></button></section><section class="basic-conent-section" id="CONTENT_BASIC"><h5 id="CONTENTHEADING">Who are we?</h5><div class="columns"><p class="col-6 col-sm-12">
+Epupa Films is an emerging film studio that focuses on creating compelling narratives rooted in African culture and storytelling. Established with the vision of showcasing the rich heritage and diverse stories of the African continent, Epupa Films aims to produce high-quality films that resonate with both local and international audiences.
+</p><div class="col-1"></div><div class="col-5 col-sm-12"><img class="img-responsive" src="./film.jpg"></img></div></div></section><section id="ServicesContentWidget"><div class="columns"><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/journey.png"></img></div><div class="card-header"><div class="card-title h6">Documentaries</div></div></div></div><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/film.png"></img></div><div class="card-header"><div class="card-title h6">Feature Films</div></div></div></div><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/short.png"></img></div><div class="card-header"><div class="card-title h6">Short Films</div></div></div></div><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/director.png"></img></div><div class="card-header"><div class="card-title h6">Cinematography</div></div></div></div><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/video-editing.png"></img></div><div class="card-header"><div class="card-title h6">Editing</div></div></div></div><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/casting.png"></img></div><div class="card-header"><div class="card-title h6">Casting</div></div></div></div></div></section><section id="ContactWidget"><div class="columns"><div class="col-4 col-sm-12 contact-containers"><h4><i class="fa fa-phone"></i></h4><h5>Phone</h5><h5>+264-81 288 8809</h5></div><div class="col-4 col-sm-12 contact-containers"><h4><i class="icon icon-mail"></i></h4><h5>Email</h5><h5>info@epupa-films.com</h5></div><div class="col-4 col-sm-12 contact-containers"><h4><i class="fa fa-map-marker"></i></h4><h5>Location</h5><h5>Namibia</h5></div></div></section></body><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
