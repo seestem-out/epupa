@@ -1,0 +1,133 @@
+<!DOCTYPE html><head lang="en"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet" href="css/vendor/spectre.min.css"><link rel="stylesheet" href="css/vendor/spectre-exp.min.css"><link rel="stylesheet" href="css/vendor/spectre-icons.min.css"><title>Epupa Films | Contact Us</title><style>
+@font-face {
+  font-family: 'Univers-Regular';
+  src: URL('fonts/UniversRegular.ttf') format('truetype');
+}
+body{
+  padding: 1em 8em
+}
+@media only screen and (max-width: 900px){
+  body{
+    padding: 1em
+  }
+}
+</style><style>
+nav {
+  background-color: rgb(255,255,255);
+  border: thin solid rgba(0,0,0,0.05);
+}
+
+#LOGO{
+  width: 120px;
+}
+
+.navlink{
+  color: rgb(52,58,64) !important;
+  font-family: "Univers-Regular";
+}
+
+.active_nav {
+  color: rgb(148,149,153) !important;
+}
+
+#MOBILE_NAVIGATION, #MOBILE_LOGO{
+  display: none;
+}
+
+#MOBILE_NAVIGATION .btn.btn-link{
+  color: rgb(52,58,64) !important;
+}
+
+@media only screen and (max-width: 663px){
+  #NAVIGATION_BAR{
+    display: none
+  }
+
+  #MOBILE_LOGO{
+    width: 80px;
+    margin: 0 auto;
+  }
+
+  #MOBILE_NAVIGATION,#MOBILE_LOGO{
+    display: block;    
+  }
+
+}
+
+#HERO {
+  background-image: url("./set.jpg");
+  height: 60vh;
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 4em;
+  text-align: center;
+}
+
+#HEROHEADING {
+  color: rgb(255,255,255) !important;
+  font-family: "Univers-Regular";
+}
+
+
+@media only screen and (max-width: 1183px){
+  #HERO {
+    height: 30vh; 
+  }
+
+  #HEROHEADING {
+    font-size: 1.1em;
+  }
+
+  #HERO {
+    padding: 2em;
+  }
+}
+
+@media only screen and (max-width: 397px){
+  #HERO {
+    height: 25vh;
+  }
+}
+
+@media only screen and (max-width: 335px){
+  #HERO {
+    height: 20vh;
+  }
+}
+
+@media only screen and (max-width: 274px){
+  #HERO {
+    height: 15vh;
+  }
+}
+
+#KAPANDJA_CONTACT_FORM_WIDGET {
+  background-color: rgb(52,58,64);
+  padding: 1em 4em;
+  font-family: "Univers-Regular";
+  color: rgb(255,255,255);
+}
+
+#KAPANDJA_CONTACT_FORM_WIDGET img{
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: thick solid rgb(255,255,255);
+}
+
+#SENDMSGBTN{
+  color: rgb(52,58,64);
+  border-color: rgb(52,58,64);
+}
+
+#ContactWidget {
+  padding: 4em;
+  background-color: rgb(0,0,0);
+  font-family: "Univers-Regular";
+  color: rgb(108,117,125)
+}
+
+.contact-containers{
+  text-align: center;
+}
+</style><body><nav class="navbar" id="NAVIGATION_BAR"><section class="navbar-section"><a class="btn btn-link navlink" href="./index.html">Home</a><a class="btn btn-link navlink" href="./about.html">About</a><a class="btn btn-link navlink active_nav" href="./contact.html">Contact</a><a class="btn btn-link navlink" href="./services.html">Services</a></section><section class="navbar-center"><img id="LOGO" src="./logo.png"></img></section><section class="navbar-section"><a class="btn btn-link navlink" href="./filmography.html">Filmography</a><a class="btn btn-link navlink" href="./trailors.html">Trailors</a><a class="btn btn-link navlink" href="./facilitation">Facilitation</a></section></nav><div class="text-center"><img id="MOBILE_LOGO" src="./logo.png"></img></div><div class="dropdown" id="MOBILE_NAVIGATION"><a class="btn btn-link dropdown-toggle" href="#"><i class="icon icon-menu"></i></a><ul class="menu"><li class="menu-item"><a class="btn btn-link navlink" href="./index.html">Home</a></li><li class="menu-item"><a class="btn btn-link navlink" href="./about.html">About</a></li><li class="menu-item"><a class="btn btn-link navlink active_nav" href="./contact.html">Contact</a></li><li class="menu-item"><a class="btn btn-link navlink" href="./services.html">Services</a></li><li class="menu-item"><a class="btn btn-link navlink" href="./filmography.html">Filmography</a></li><li class="menu-item"><a class="btn btn-link navlink" href="./trailors.html">Trailors</a></li><li class="menu-item"><a class="btn btn-link navlink" href="./facilitation">Facilitation</a></li></ul></div><section id="HERO"><h3 id="HEROHEADING">Contact us</h3></section><section id="KAPANDJA_CONTACT_FORM_WIDGET"><div class="columns"><div class="col-5 col-sm-12"><img class="img-responsive" src="./cam.jpg"></img></div><div class="col-1"></div><div class="col-6 col-sm-12 form-group"><h4>Send us a message</h4><label class="form-label" for="nameInput">Your Name</label><input class="form-input" type="text" id="nameInput" placeholder="Name"></input><label class="form-label" for="emailInput">Your Email Address</label><input class="form-input" type="text" id="emailInput" placeholder="Email"></input><label class="form-label" for="phoneInput">Your Phone Number</label><input class="form-input" type="text" id="phoneInput" placeholder="Phone"></input><label class="form-label" for="msgInput">Your Message</label><textarea class="form-input" id="msgInput" placeholder="Message" rows="3"></textarea><br></br><button class="btn" id="SENDMSGBTN">Send message</button></div></div></section><section id="ContactWidget"><div class="columns"><div class="col-4 col-sm-12 contact-containers"><h4><i class="fa fa-phone"></i></h4><h5>Phone</h5><h5>+264-81 288 8809</h5></div><div class="col-4 col-sm-12 contact-containers"><h4><i class="icon icon-mail"></i></h4><h5>Email</h5><h5>info@epupa-films.com</h5></div><div class="col-4 col-sm-12 contact-containers"><h4><i class="fa fa-map-marker"></i></h4><h5>Location</h5><h5>Namibia</h5></div></div></section></body></head>
