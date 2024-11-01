@@ -1,4 +1,4 @@
-<!DOCTYPE html><head lang="en"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet" href="css/vendor/spectre.min.css"><link rel="stylesheet" href="css/vendor/spectre-exp.min.css"><link rel="stylesheet" href="css/vendor/spectre-icons.min.css"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link><title>Epupa Films</title><style>
+<!DOCTYPE html><head lang="en"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet" href="css/vendor/spectre.min.css"><link rel="stylesheet" href="css/vendor/spectre-exp.min.css"><link rel="stylesheet" href="css/vendor/spectre-icons.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link><title>Epupa Films</title><style>
 @font-face {
   font-family: 'Univers-Regular';
   src: URL('fonts/UniversRegular.ttf') format('truetype');
@@ -22,7 +22,7 @@ nav {
 }
 
 .navlink{
-  color: rgb(0,191,149) !important;
+  color: rgb(52,58,64) !important;
   font-family: "Univers-Regular";
 }
 
@@ -35,7 +35,7 @@ nav {
 }
 
 #MOBILE_NAVIGATION .btn.btn-link{
-  color: rgb(0,191,149) !important;
+  color: rgb(52,58,64) !important;
 }
 
 @media only screen and (max-width: 663px){
@@ -74,8 +74,8 @@ nav {
 }
 
 #HERO #HEROBTN{
- border-color: rgb(0,191,149) !important;
- background-color: rgb(0,191,149) !important;
+ border-color: rgb(52,58,64) !important;
+ background-color: rgb(52,58,64) !important;
  font-family: "Univers-Regular";
  border-radius: 0;
 }
@@ -135,13 +135,13 @@ nav {
 }
 
 .basic-conent-section #CONTENTHEADING {
-  color: rgb(0,191,149) !important;
+  color: rgb(52,58,64) !important;
 }
 
 .basic-conent-section img{
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  border: thick solid rgb(0,191,149);
+  border: thick solid rgb(52,58,64);
 }
 
 @media only screen and (max-width: 434px){
@@ -153,7 +153,7 @@ nav {
 
 #ServicesContentWidget{
   padding: 4em;
-  background-color: rgb(0,191,149);
+  background-color: rgb(52,58,64);
   font-family: "Univers-Regular";
 }
 
@@ -162,7 +162,7 @@ nav {
 }
 
 #ServicesContentWidget .card{
-  background-color: rgb(0,191,149);
+  background-color: rgb(52,58,64);
   padding: .3em;
   border: none;
   text-align: center;
@@ -191,16 +191,50 @@ nav {
   }
 }
 
+.basic4-content-section{
+  padding-top: 5em;
+  background-image: url("./reel.jpg");
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  font-family: "Univers-Regular";
+}
+
+.basic4-content-section #CONTENTHEADING {
+  color: rgb(255,255,255) !important;
+  font-size: 1.2em;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  opacity: .8;
+}
+
+@media only screen and (max-width: 434px){
+  .basic4-content-section{
+    padding: 1em;
+  }
+
+  .basic4-content-section{
+    padding-top: 1em;
+    height: 20vh; 
+}
+
+.basic4-content-section #CONTENTHEADING {
+  font-size: 1em;
+}
+
+}
+
 #ContactWidget {
   padding: 4em;
-  background-color: rgb(38,38,38);
+  background-color: rgb(0,0,0);
   font-family: "Univers-Regular";
-  color: rgb(0,191,149)
+  color: rgb(108,117,125)
 }
 
 .contact-containers{
   text-align: center;
 }
-</style><body><nav class="navbar" id="NAVIGATION_BAR"><section class="navbar-section"><a class="btn btn-link navlink active_nav" href="./index.html">Home</a><a class="btn btn-link navlink" href="">About</a><a class="btn btn-link navlink" href="">Contact</a></section><section class="navbar-center"><img id="LOGO" src="./logo.png"></img></section><section class="navbar-section"><a class="btn btn-link navlink" href="">Filmography</a><a class="btn btn-link navlink" href="">Trailors</a><a class="btn btn-link navlink" href="">Gallery</a></section></nav><div class="text-center"><img id="MOBILE_LOGO" src="./logo.png"></img></div><div class="dropdown" id="MOBILE_NAVIGATION"><a class="btn btn-link dropdown-toggle" href="#"><i class="icon icon-menu"></i></a><ul class="menu"><li class="menu-item"><a class="btn btn-link navlink active_nav" href="./index.html">Home</a></li><li class="menu-item"><a class="btn btn-link navlink" href="">About</a></li><li class="menu-item"><a class="btn btn-link navlink" href="">Contact</a></li><li class="menu-item"><a class="btn btn-link navlink" href="">Filmography</a></li><li class="menu-item"><a class="btn btn-link navlink" href="">Trailors</a></li><li class="menu-item"><a class="btn btn-link navlink" href="">Gallery</a></li></ul></div><section id="HERO"><h3 id="HEROHEADING">Epupa Films</h3><p class="col-8 col-lg-4 col-md-8" id="HEROSUBHEADING">Reality, Passion, Drama... Art</p><button class="btn" id="HEROBTN"><a href="./explore.html">Filmography</a></button></section><section class="basic-conent-section" id="CONTENT_BASIC"><h5 id="CONTENTHEADING">Who are we?</h5><div class="columns"><p class="col-6 col-sm-12">
+</style><body><nav class="navbar" id="NAVIGATION_BAR"><section class="navbar-section"><a class="btn btn-link navlink active_nav" href="./index.html">Home</a><a class="btn btn-link navlink" href="">About</a><a class="btn btn-link navlink" href="">Contact</a><a class="btn btn-link navlink" href="">Services</a></section><section class="navbar-center"><img id="LOGO" src="./logo.png"></img></section><section class="navbar-section"><a class="btn btn-link navlink" href="">Filmography</a><a class="btn btn-link navlink" href="">Trailors</a><a class="btn btn-link navlink" href="">Facilitation</a></section></nav><div class="text-center"><img id="MOBILE_LOGO" src="./logo.png"></img></div><div class="dropdown" id="MOBILE_NAVIGATION"><a class="btn btn-link dropdown-toggle" href="#"><i class="icon icon-menu"></i></a><ul class="menu"><li class="menu-item"><a class="btn btn-link navlink active_nav" href="./index.html">Home</a></li><li class="menu-item"><a class="btn btn-link navlink" href="">About</a></li><li class="menu-item"><a class="btn btn-link navlink" href="">Contact</a></li><li class="menu-item"><a class="btn btn-link navlink" href="">Services</a></li><li class="menu-item"><a class="btn btn-link navlink" href="">Filmography</a></li><li class="menu-item"><a class="btn btn-link navlink" href="">Trailors</a></li><li class="menu-item"><a class="btn btn-link navlink" href="">Facilitation</a></li></ul></div><section id="HERO"><h3 id="HEROHEADING">Epupa Films</h3><p class="col-8 col-lg-4 col-md-8" id="HEROSUBHEADING">Reality, Passion, Drama... Art</p><button class="btn" id="HEROBTN"><a href="./explore.html">Filmography</a></button></section><section class="basic-conent-section" id="CONTENT_BASIC"><h5 id="CONTENTHEADING">Who are we?</h5><div class="columns"><p class="col-6 col-sm-12">
 Epupa Films is an emerging film studio that focuses on creating compelling narratives rooted in African culture and storytelling. Established with the vision of showcasing the rich heritage and diverse stories of the African continent, Epupa Films aims to produce high-quality films that resonate with both local and international audiences.
-</p><div class="col-1"></div><div class="col-5 col-sm-12"><img class="img-responsive" src="./film.jpg"></img></div></div></section><section id="ServicesContentWidget"><div class="columns"><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/journey.png"></img></div><div class="card-header"><div class="card-title h6">Documentaries</div></div></div></div><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/film.png"></img></div><div class="card-header"><div class="card-title h6">Feature Films</div></div></div></div><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/short.png"></img></div><div class="card-header"><div class="card-title h6">Short Films</div></div></div></div><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/director.png"></img></div><div class="card-header"><div class="card-title h6">Cinematography</div></div></div></div><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/video-editing.png"></img></div><div class="card-header"><div class="card-title h6">Editing</div></div></div></div><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/casting.png"></img></div><div class="card-header"><div class="card-title h6">Casting</div></div></div></div></div></section><section id="ContactWidget"><div class="columns"><div class="col-4 col-sm-12 contact-containers"><h4><i class="fa fa-phone"></i></h4><h5>Phone</h5><h5>+264-81 288 8809</h5></div><div class="col-4 col-sm-12 contact-containers"><h4><i class="icon icon-mail"></i></h4><h5>Email</h5><h5>info@epupa-films.com</h5></div><div class="col-4 col-sm-12 contact-containers"><h4><i class="fa fa-map-marker"></i></h4><h5>Location</h5><h5>Namibia</h5></div></div></section></body><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script></head>
+</p><div class="col-1"></div><div class="col-5 col-sm-12"><img class="img-responsive" src="./film.jpg"></img></div></div></section><section id="ServicesContentWidget"><div class="columns"><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/journey.png"></img></div><div class="card-header"><div class="card-title h6">Documentaries</div></div></div></div><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/film.png"></img></div><div class="card-header"><div class="card-title h6">Feature Films</div></div></div></div><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/studio.png"></img></div><div class="card-header"><div class="card-title h6">Facilitation</div></div></div></div><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/director.png"></img></div><div class="card-header"><div class="card-title h6">Cinematography</div></div></div></div><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/video-editing.png"></img></div><div class="card-header"><div class="card-title h6">Editing</div></div></div></div><div class="col-2 col-sm-4"><div class="card"><div class="card-image"><img class="img-responsive" src="./icons/casting.png"></img></div><div class="card-header"><div class="card-title h6">Casting</div></div></div></div></div></section><section class="basic4-content-section"><p id="CONTENTHEADING">Epupa Films is dedicated to amplifying African voices through cinema</p></section><section id="ContactWidget"><div class="columns"><div class="col-4 col-sm-12 contact-containers"><h4><i class="fa fa-phone"></i></h4><h5>Phone</h5><h5>+264-81 288 8809</h5></div><div class="col-4 col-sm-12 contact-containers"><h4><i class="icon icon-mail"></i></h4><h5>Email</h5><h5>info@epupa-films.com</h5></div><div class="col-4 col-sm-12 contact-containers"><h4><i class="fa fa-map-marker"></i></h4><h5>Location</h5><h5>Namibia</h5></div></div></section></body></head>
